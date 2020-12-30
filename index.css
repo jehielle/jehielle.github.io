@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Major+Mono+Display&family=Roboto+Mono&display=swap');
+
+:root{
+	--bgcolor: #27282c;
+	--overlay: #5e5e5e;
+}
+
+::selection {
+  background: #ddeced;
+}
+
+body{ 
+	font-family: 'Roboto Mono';
+	text-align: center;
+	color: white;
+	background-color: #000;
+	background-image: 
+		linear-gradient(transparent 11px, rgba(255, 255, 255, 0.2) 12px, transparent 12px),
+		linear-gradient(90deg, transparent 11px, rgba(255, 255, 255, 0.2) 12px, transparent 12px);
+		background-size: 100% 20px, 20px 100%;
+
+}
+
+#subtitle{
+	font-family: 'Major Mono Display';
+	font-size: 0.8em;
+	padding: 10px 10px 20px 10px;
+	text-align: center;
+	color: white;
+}
+
+header{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2vw;
+	font-family: 'Rubik Mono One';
+}
+
+a{
+	font-size: 36px;
+	color: var(--overlay);
+	margin: 2px;
+	text-decoration: none;
+	text-align: center;
+}
+
+a:hover{
+	filter: drop-shadow(0px 0px 10px white);
+	color: grey;
+}
+
+p{
+	margin: 0em 3em 0em 3em;
+	padding: 0 auto;
+	font-size: small;
+}
+
+h3{
+	padding: auto;
+	margin: 0;
+}
+
+/* for images w thumbnails */
+.thumb{
+	border-radius: 50%;
+	width: 2.5em;
+	margin: auto;
+}
+
+/* for screenshots in the Projects tab */
+.screenshot{
+	width: 70%;
+	justify-content: center;
+	margin: 0.5em 0.5em 1.5em 0.5em;
+	padding: auto;
+	filter: brightness(90%) sepia(10%) drop-shadow(0px 0px 10px rgb(172, 169, 169));
+	border-radius: 20px;
+}
+
+.screenshot:hover{
+	filter: brightness(90%) sepia(10%) drop-shadow(0px 0px 10px grey);
+}
+
+
+/* ---------------------------------------------- */
+/*                      TABS                      */
+/* ---------------------------------------------- */
+ .tabs { /*background*/
+	display: flex;
+	flex-wrap: wrap; 
+	padding: 3vw 15vw;
+}
+
+.tabs label { /* the tab flap for unopened tab */
+	order: 1; 
+	display: block;
+	padding: 10px 20px 13px 20px;
+	cursor: pointer;
+	background: var(--bgcolor);
+	font-weight: bold;
+	font-size: 15px;
+	transition: background-color ease 0.2s;
+	border-radius: 10px 10px 0px 0px;
+	
+}
+.tabs .tab { /*contents of tab*/
+	order: 99; 
+	flex-grow: 1;
+	width: 100%;
+	display: none;
+	padding: 1rem;
+	background: var(--overlay);
+	border-radius: 0px 10px 10px 10px;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+
+.tabs input[type="radio"]:checked + label { /* tab flap for for opened tab */
+	background: var(--overlay);
+	border-radius: 10px 10px 0px 0px;
+	padding: 10px 20px 10px 20px;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+
+/* ---------------------------------------------- */
+/*                 GLITCH EFFECT                  */
+/*     (the font size for the header is here)     */
+/* ---------------------------------------------- */
+.glitch {
+	color: white;
+	font-size: 70px; 
+	position: relative;
+	width: 7.7em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.glitch::after {
+	content: attr(data-text);
+	position: absolute;
+	left: 2px;
+	text-shadow: -1px 0 fuchsia;
+	top: 0;
+	color: white;
+	overflow: hidden;
+	animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+
+.glitch::before {
+	content: attr(data-text);
+	position: absolute;
+	left: -1px;
+	text-shadow: 1px 0 cyan;
+	top: 0;
+	color: white;
+	overflow: hidden;
+	animation: noise-anim-2 15s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim {
+0% {
+	clip-path: inset(86% 0 12% 0);
+}
+5% {
+	clip-path: inset(81% 0 10% 0);
+}
+10% {
+	clip-path: inset(49% 0 26% 0);
+}
+15% {
+	clip-path: inset(64% 0 14% 0);
+}
+20% {
+	clip-path: inset(2% 0 36% 0);
+}
+25% {
+	clip-path: inset(36% 0 47% 0);
+}
+30% {
+	clip-path: inset(94% 0 3% 0);
+}
+35% {
+	clip-path: inset(31% 0 57% 0);
+}
+40% {
+	clip-path: inset(40% 0 25% 0);
+}
+45% {
+	clip-path: inset(71% 0 9% 0);
+}
+50% {
+	clip-path: inset(4% 0 76% 0);
+}
+55% {
+	clip-path: inset(75% 0 15% 0);
+}
+60% {
+	clip-path: inset(17% 0 3% 0);
+}
+65% {
+	clip-path: inset(18% 0 14% 0);
+}
+70% {
+	clip-path: inset(14% 0 4% 0);
+}
+75% {
+	clip-path: inset(29% 0 67% 0);
+}
+80% {
+	clip-path: inset(4% 0 26% 0);
+}
+85% {
+	clip-path: inset(31% 0 64% 0);
+}
+90% {
+	clip-path: inset(94% 0 6% 0);
+}
+95% {
+	clip-path: inset(51% 0 22% 0);
+}
+100% {
+	clip-path: inset(47% 0 36% 0);
+}
+}
+
+
+@keyframes noise-anim-2 {
+0% {
+	clip-path: inset(85% 0 5% 0);
+}
+5% {
+	clip-path: inset(23% 0 61% 0);
+}
+10% {
+	clip-path: inset(77% 0 15% 0);
+}
+15% {
+	clip-path: inset(100% 0 1% 0);
+}
+20% {
+	clip-path: inset(64% 0 33% 0);
+}
+25% {
+	clip-path: inset(60% 0 38% 0);
+}
+30% {
+	clip-path: inset(90% 0 7% 0);
+}
+35% {
+	clip-path: inset(60% 0 2% 0);
+}
+40% {
+	clip-path: inset(28% 0 19% 0);
+}
+45% {
+	clip-path: inset(46% 0 50% 0);
+}
+50% {
+	clip-path: inset(18% 0 60% 0);
+}
+55% {
+	clip-path: inset(46% 0 3% 0);
+}
+60% {
+	clip-path: inset(46% 0 11% 0);
+}
+65% {
+	clip-path: inset(59% 0 32% 0);
+}
+70% {
+	clip-path: inset(60% 0 4% 0);
+}
+75% {
+	clip-path: inset(48% 0 8% 0);
+}
+80% {
+	clip-path: inset(12% 0 67% 0);
+}
+85% {
+	clip-path: inset(46% 0 13% 0);
+}
+90% {
+	clip-path: inset(46% 0 35% 0);
+}
+95% {
+	clip-path: inset(10% 0 45% 0);
+}
+100% {
+	clip-path: inset(26% 0 73% 0);
+}
+}
+
+/* ---------------------------------------------- */
+/*                      MEDIA                     */
+/* ---------------------------------------------- */
+
+@media (max-width: 45em) {
+	.tabs .tab,
+	.tabs label {
+	  order: initial;
+	}
+
+	.tabs{
+		text-align: center;
+	}
+
+	.tabs .tab{ /* contents of tab */
+		border-radius: 0px 0px 10px 10px;
+	}
+
+	.tabs label { /* the tab flap for unopened tab */
+	  width: 100%;
+	  margin-right: auto;
+	  margin-top: 0.2rem;	
+	  margin-bottom: -0.1rem;
+	  border-radius: 10px 10px 10px 10px;
+	}
+  
+	#subtitle{
+	  font-size: 0.6em;
+	  padding: 10px;
+	}
+  
+	.glitch{
+		font-size: 40px;
+		width: 8.5em;
+		text-align: center;
+	}
+
+	p{
+		font-size: 0.7em;
+	}
+
+	.thumb{
+		border-radius: 50%;
+		width: 2.5em;
+		padding: 0;
+		display: block;
+	}
+  
+  }
+  
