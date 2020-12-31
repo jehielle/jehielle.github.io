@@ -39,7 +39,7 @@ header{
 	position: relative;
 	width: 7.7em;
 	text-align: center;
-	text-shadow: -1px 0 fuchsia, 1px 0 cyan;
+	text-shadow: -1px 0px #ff00ff, 1px 0px #00ffff;
 }
 
 a{
