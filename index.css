@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Major+Mono+Display&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Major+Mono+Display&family=Raleway&display=swap');
 
 :root{
 	--bgcolor: #27282c;
@@ -10,7 +10,7 @@
 }
 
 body{ 
-	font-family: 'Roboto Mono';
+	font-family: 'Raleway';
 	text-align: center;
 	color: white;
 	background-color: #000;
@@ -60,10 +60,7 @@ p{
 	font-size: small;
 }
 
-h3{
-	padding: auto;
-	margin: 0;
-}
+
 
 /* for images w thumbnails */
 .thumb{
