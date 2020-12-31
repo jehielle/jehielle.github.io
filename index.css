@@ -34,6 +34,11 @@ header{
 	margin-right: auto;
 	margin-top: 2vw;
 	font-family: 'Rubik Mono One';
+	color: white;
+	font-size: 70px; 
+	position: relative;
+	width: 7.7em;
+	text-align: center;
 }
 
 a{
