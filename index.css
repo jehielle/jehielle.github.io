@@ -204,6 +204,17 @@ ul {
 		padding: 0;
 		display: block;
 	}
+
+	.column{
+		width: 100%;
+		float: center;
+		padding: 0;
+	}
+
+	.websitethumbs{
+		width: 70%;
+		justify-content: center;
+	}
   
   }
   
