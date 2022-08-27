@@ -2,11 +2,16 @@
 
 :root{
 	--bgcolor: #27282c;
-	--overlay: #5e5e5e;
+	--overlay: #5e5e5ee2;
 }
 
 ::selection {
   background: #ddeced;
+}
+
+/* for the images grid in artworks section */
+* {
+	box-sizing: border-box;
 }
 
 body{ 
@@ -71,13 +76,6 @@ ul {
 
 
 
-/* for images w thumbnails */
-.thumb{
-	border-radius: 50%;
-	width: 2.5em;
-	margin: auto;
-}
-
 /* for screenshots in the Projects tab */
 .screenshot{
 	width: 70%;
@@ -92,11 +90,15 @@ ul {
 	filter: brightness(90%) sepia(10%) drop-shadow(0px 0px 10px grey);
 }
 
-/* for website thumbnails */
+/* for website thumbnails & artwork */
 .column {
 	float: left;
 	width: 50%;
-	padding: 3vw;
+	padding: 10px;
+}
+
+.column img {
+	margin-top: 8px;
 }
   
 /* to clear the floats */
@@ -196,13 +198,6 @@ ul {
 
 	p{
 		font-size: 0.7em;
-	}
-
-	.thumb{
-		border-radius: 50%;
-		width: 2.5em;
-		padding: 0;
-		display: block;
 	}
 
 	.column{
