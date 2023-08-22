@@ -18,7 +18,7 @@ body{
 	background-color: var(--bgcolor);
 	margin:0;
 	text-align: center;
-	background-image: url("stars.jpg");
+	background-image: url("img/stars.jpg");
 	background-size:cover;
 	background-attachment: fixed;
 	overflow-x: hidden;
