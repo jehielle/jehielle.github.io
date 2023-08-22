@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	background-color: #0a0a0a;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #c9c9c9; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #969696; 
+}
+
+/* SIZE OF BOOK */
+.book {
+	--book-height: 100vh;
+	--book-ratio: 1.4;
+}
+.book > div {
+	height: var(--book-height);
+	width: calc(var(--book-height) / var(--book-ratio));
+	overflow: auto;
+	transform: scale(0.9);
+	transform-origin: left;
+}
+
+/* BOOK COVER IMAGE */
+.cover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 9;
+	text-align: right;
+	background: url("bookcover.jpg");
+	background-repeat: no-repeat;
+	transition: transform 2s;
+}
+.cover::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	right: 20px;
+	top: 0;
+	bottom: 0;
+}
+
+/* FLIP COVER */
+.content {
+	transform: scale(0.9) translateY(30px);
+	background-color: rgb(230, 230, 230) !important;
+	transition: all 0.3s 1s;
+}
+.content h3, .content p {
+	opacity: 0;
+	transition: all 0.3s 0.3s;
+}
+.cover > div {
+	transition: opacity 0s 0.6s;
+}
+.book:hover > .cover {
+	transform: rotateY(180deg) scale(0.9);
+}
+.book:hover > .cover > div {
+	opacity: 0;
+}
+.book:hover > .content {
+	transform: scale(0.9) translateY(0px);
+}
+.book:hover > .content h3,
+.book:hover > .content p {
+	opacity: 1;
+}
+
+
+/* HEADINGS */
+/* title */
+h1 {
+	font-family: 'Special Elite', cursive;
+    font-weight: normal;
+	font-size: 98px;
+	color: #161616;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.199);
+    padding-right: 25px;
+}
+/* author name */
+h2 {
+	font-size: 20px;
+    font-family: 'Special Elite', cursive;
+    padding-right: 25px;
+}
+h1,h2,h3,p {
+	margin: 0;
+}
+/* chapter titles */
+h3 {
+	padding: 30px;
+    font-family: 'Spectral', serif;
+    text-align: center;
+}
+/* paragraphs */
+p {
+    font-family: 'Spectral', serif;
+	padding: 0px 30px 10px 30px;
+	text-align: justify;
+	font-size: 20px;
+}
