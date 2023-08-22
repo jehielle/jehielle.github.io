@@ -1,1 +1,1 @@
-## Portfolio Site [ WIP ]
+## Portfolio Site - WIP
