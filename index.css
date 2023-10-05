@@ -31,6 +31,7 @@ body{
 	color: var(--fontcol);
 	backdrop-filter: blur(15px);
 	padding: 25px 0px 5px 0px;
+	z-index:99;
 }
 
 .navi a{
@@ -175,13 +176,15 @@ h1{
 	box-sizing: border-box;
 	border-radius: 25px;
 	border: 1px solid rgba(255, 255, 255, .25);
-	background-color: rgba(176, 204, 255, 0.161);
-	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-	backdrop-filter: blur(5px);
+	/* background-color: rgba(176, 204, 255, 0.161); */
+	background-color: #d1d1d1;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.373);
 	flex: 20.3%;
 	padding: 10px;
 	margin: 10px;
-	position: relative;
+	position:static;
+	color:#00142bb7;
+	font-weight: bold;
 }
 
 .column:hover{
@@ -197,7 +200,7 @@ h1{
 	vertical-align: middle;
 	height: 200px;
 	border-radius: 5px;
-	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.332);
 }
 
 .row {
@@ -213,23 +216,48 @@ h1{
 }
 
 /* MORE INFO BUTTON */
-button {
+button,
+input[type=submit] {
 	border-radius: 15px;
 	border-style:none;
-	background-color: rgba(176, 204, 255, 0.161);
-	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+	background-color: #00142bb7;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.12);
 	padding: 10px 15px 10px 15px;
 	color: var(--fontcol);
 	font-family: 'Karla';
 }
 
-button:hover{
-	box-shadow: 0 0 10px 1px rgba(212, 212, 212, 0.616);
+button:hover,
+input[type=submit]:hover{
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.63);
+	cursor:pointer;
 }
 
 button a{
 	text-decoration: none;
 	color: var(--fontcol);
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	margin: 16px;
+	resize: vertical;
+	font-family: 'Karla';
+	border: none;
+	background-color: rgba(238, 244, 255, 0.486);
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+	border-radius: 15px;
+	background-color: #d1d1d1;
+	padding: 20px 40px 20px 10px;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
 }
 
 
