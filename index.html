@@ -10,222 +10,92 @@
     <link rel="stylesheet" href="index.css">
     <link type="image/png" sizes="16x16" rel="icon" href="https://img.icons8.com/emoji/48/000000/laptop-emoji.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jehielle David — Full-Stack & Data</title>
+    <title>Jehielle David — Developer</title>
 </head>
 
 <!--------------------------- BODY --------------------------->
 <body>
 
-	<!-- NAVIGATION -->
-	<div class="navi" id="navbar">
-		<p>JEHIELLE<br>DAVID</p>
-		<a href="#top">[ 00. HOME ]</a>
-		<a href="#skills">[ 01. SKILLS ]</a>
-		<a href="#projects">[ 02. PROJECTS ]</a>
-		<a href="#contact">[ 03. CONTACT ]</a>
-	</div>
+    <div class="wrapper">
+        <div id="grain">
+            <h1>jehielle.dev</h1>
 
-	<!-- INTRODUCTION -->
-    <div class="rhombus">
-		<div id="line1">
-			full<code>&#8212;</code>stack dev
-		</div>
-		<div id="line2">
-			& data analyst
-		</div>
-	</div>
+            <!-- tabs -->
+            <div class="tabs">
 
-	<!-- scroll down button -->
-	<a href="#skills" class="arrow"><span></span></a>
+                <!-- coding tab -->
+                <input type="radio" name="tabs" id="tabone" checked="checked">
+                <label for="tabone" style="font-family:'Audiowide';width:45%;">coding<i class='bx bx-x bx-xs'></i>  </label>
+                <div class="tab">
+                    <br>
+                    <a href="question/question.html"><img src="assets/question.gif"></a>
+                    <a href="https://github.com/jehielle/img-to-ascii-art/tree/main"><img style="width: 240px;" src="assets/ascii.png"></a> 
+                    <a href="https://github.com/jehielle/MyRecipesApp"><img style="width: 240px;" src="assets/recipes.png"></a>
+                    <a href="https://github.com/jehielle/serendipity"><img style="width: 240px;" src="assets/seren.png"></a>
+                    <img style="width: 240px;" src="assets/book.gif">
 
-	<!-- EVERYTHING BELOW 'FULLSTACKDEV' -->
-	<div class="wrapper">
+                </div> <!-- div class (projects) tab ends -->
 
-		<!-- SKILLS -->
-		<div id="skills">
-			<h1>[ skills ]</h1>	
+                <!-- art tab -->
+                <input type="radio" name="tabs" id="tabtwo">
+                <label for="tabtwo" style="font-family:'Audiowide';width:45%;">artwork <i class='bx bx-x bx-xs'></i>  </label>
+                <div class="tab">
 
-			<!-- python -->
-			<div class="badge" id="darkblue">
-				<div class="circle">
-					<img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiMwMjc3QkQiIGQ9Ik0yNC4wNDcsNWMtMS41NTUsMC4wMDUtMi42MzMsMC4xNDItMy45MzYsMC4zNjdjLTMuODQ4LDAuNjctNC41NDksMi4wNzctNC41NDksNC42N1YxNGg5djJIMTUuMjJoLTQuMzVjLTIuNjM2LDAtNC45NDMsMS4yNDItNS42NzQsNC4yMTljLTAuODI2LDMuNDE3LTAuODYzLDUuNTU3LDAsOS4xMjVDNS44NTEsMzIuMDA1LDcuMjk0LDM0LDkuOTMxLDM0aDMuNjMydi01LjEwNGMwLTIuOTY2LDIuNjg2LTUuODk2LDUuNzY0LTUuODk2aDcuMjM2YzIuNTIzLDAsNS0xLjg2Miw1LTQuMzc3di04LjU4NmMwLTIuNDM5LTEuNzU5LTQuMjYzLTQuMjE4LTQuNjcyQzI3LjQwNiw1LjM1OSwyNS41ODksNC45OTQsMjQuMDQ3LDV6IE0xOS4wNjMsOWMwLjgyMSwwLDEuNSwwLjY3NywxLjUsMS41MDJjMCwwLjgzMy0wLjY3OSwxLjQ5OC0xLjUsMS40OThjLTAuODM3LDAtMS41LTAuNjY0LTEuNS0xLjQ5OEMxNy41NjMsOS42OCwxOC4yMjYsOSwxOS4wNjMsOXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjRkZDMTA3IiBkPSJNMjMuMDc4LDQzYzEuNTU1LTAuMDA1LDIuNjMzLTAuMTQyLDMuOTM2LTAuMzY3YzMuODQ4LTAuNjcsNC41NDktMi4wNzcsNC41NDktNC42N1YzNGgtOXYtMmg5LjM0M2g0LjM1YzIuNjM2LDAsNC45NDMtMS4yNDIsNS42NzQtNC4yMTljMC44MjYtMy40MTcsMC44NjMtNS41NTcsMC05LjEyNUM0MS4yNzQsMTUuOTk1LDM5LjgzMSwxNCwzNy4xOTQsMTRoLTMuNjMydjUuMTA0YzAsMi45NjYtMi42ODYsNS44OTYtNS43NjQsNS44OTZoLTcuMjM2Yy0yLjUyMywwLTUsMS44NjItNSw0LjM3N3Y4LjU4NmMwLDIuNDM5LDEuNzU5LDQuMjYzLDQuMjE4LDQuNjcyQzE5LjcxOSw0Mi42NDEsMjEuNTM2LDQzLjAwNiwyMy4wNzgsNDN6IE0yOC4wNjMsMzljLTAuODIxLDAtMS41LTAuNjc3LTEuNS0xLjUwMmMwLTAuODMzLDAuNjc5LTEuNDk4LDEuNS0xLjQ5OGMwLjgzNywwLDEuNSwwLjY2NCwxLjUsMS40OThDMjkuNTYzLDM4LjMyLDI4Ljg5OSwzOSwyOC4wNjMsMzl6Ij48L3BhdGg+Cjwvc3ZnPg=="/>
-				</div>
-			</div>
+                    <div class="row">
+                        <div class="column">
+                                <img src="assets/filmboy.JPG" style="width:100%" alt="painting of guy holding a camera in the light">
+                                <img src="assets/sunguitar.png" style="width:100%" alt="painting of guitarist using sunshine-esque coloring">
+                                <img src="assets/plants.png" style="width:100%" alt="painting of girl with plants growing under her android skin">
+                        </div> <!-- first column ends -->
 
-			<!-- cpp -->
-			<div class="badge" id="darkblue">
-				<div class="circle">
-					<img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiMwMDU0OWQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIyLjkwMywzLjI4NmMwLjY3OS0wLjM4MSwxLjUxNS0wLjM4MSwyLjE5MywwIGMzLjM1NSwxLjg4MywxMy40NTEsNy41NTEsMTYuODA3LDkuNDM0QzQyLjU4MiwxMy4xLDQzLDEzLjgwNCw0MywxNC41NjZjMCwzLjc2NiwwLDE1LjEwMSwwLDE4Ljg2NyBjMCwwLjc2Mi0wLjQxOCwxLjQ2Ni0xLjA5NywxLjg0N2MtMy4zNTUsMS44ODMtMTMuNDUxLDcuNTUxLTE2LjgwNyw5LjQzNGMtMC42NzksMC4zODEtMS41MTUsMC4zODEtMi4xOTMsMCBjLTMuMzU1LTEuODgzLTEzLjQ1MS03LjU1MS0xNi44MDctOS40MzRDNS40MTgsMzQuODk5LDUsMzQuMTk2LDUsMzMuNDM0YzAtMy43NjYsMC0xNS4xMDEsMC0xOC44NjcgYzAtMC43NjIsMC40MTgtMS40NjYsMS4wOTctMS44NDdDOS40NTEsMTAuODM3LDE5LjU0OSw1LjE2OSwyMi45MDMsMy4yODZ6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDA4NmQ0IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01LjMwNCwzNC40MDRDNS4wMzgsMzQuMDQ4LDUsMzMuNzEsNSwzMy4yNTUgYzAtMy43NDQsMC0xNS4wMTQsMC0xOC43NTljMC0wLjc1OCwwLjQxNy0xLjQ1OCwxLjA5NC0xLjgzNmMzLjM0My0xLjg3MiwxMy40MDUtNy41MDcsMTYuNzQ4LTkuMzggYzAuNjc3LTAuMzc5LDEuNTk0LTAuMzcxLDIuMjcxLDAuMDA4YzMuMzQzLDEuODcyLDEzLjM3MSw3LjQ1OSwxNi43MTQsOS4zMzFjMC4yNywwLjE1MiwwLjQ3NiwwLjMzNSwwLjY2LDAuNTc2TDUuMzA0LDM0LjQwNHoiIGNsaXAtcnVsZT0iZXZlbm9kZCI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTI0LDEwYzcuNzI3LDAsMTQsNi4yNzMsMTQsMTRzLTYuMjczLDE0LTE0LDE0IHMtMTQtNi4yNzMtMTQtMTRTMTYuMjczLDEwLDI0LDEweiBNMjQsMTdjMy44NjMsMCw3LDMuMTM2LDcsN2MwLDMuODYzLTMuMTM3LDctNyw3cy03LTMuMTM3LTctN0MxNywyMC4xMzYsMjAuMTM2LDE3LDI0LDE3eiIgY2xpcC1ydWxlPSJldmVub2RkIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwNzVjMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNDIuNDg1LDEzLjIwNWMwLjUxNiwwLjQ4MywwLjUwNiwxLjIxMSwwLjUwNiwxLjc4NCBjMCwzLjc5NS0wLjAzMiwxNC41ODksMC4wMDksMTguMzg0YzAuMDA0LDAuMzk2LTAuMTI3LDAuODEzLTAuMzIzLDEuMTI3TDIzLjU5MywyNEw0Mi40ODUsMTMuMjA1eiIgY2xpcC1ydWxlPSJldmVub2RkIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMzEgMjFIMzNWMjdIMzF6TTM4IDIxSDQwVjI3SDM4eiIgY2xpcC1ydWxlPSJldmVub2RkIj48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjkgMjNIMzVWMjVIMjl6TTM2IDIzSDQyVjI1SDM2eiIgY2xpcC1ydWxlPSJldmVub2RkIj48L3BhdGg+Cjwvc3ZnPg=="/>
-				</div>
-			</div>
+                        <div class="column">
+                                <img src="assets/mt.JPG" style="width:100%" alt="guitarist">
+                                <img src="assets/shed8.jpg" style="width:100%" alt="graphic design of coffee and cat">
+                        </div><!-- second column ends -->
+                    </div><!-- div class row ends -->
+                </div> <!-- div class (artwork) tab ends -->
 
-			<!-- java -->
-			<div class="badge" id="red">
-				<div class="circle">
-					<img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNGNDQzMzYiIGQ9Ik0yMy42NSwyNC44OThjLTAuOTk4LTEuNjA5LTEuNzIyLTIuOTQzLTIuNzI1LTUuNDU1QzE5LjIyOSwxNS4yLDMxLjI0LDExLjM2NiwyNi4zNywzLjk5OWMyLjExMSw1LjA4OS03LjU3Nyw4LjIzNS04LjQ3NywxMi40NzNDMTcuMDcsMjAuMzcsMjMuNjQ1LDI0Ljg5OCwyMy42NSwyNC44OTh6Ij48L3BhdGg+PHBhdGggZmlsbD0iI0Y0NDMzNiIgZD0iTTIzLjg3OCwxNy4yN2MtMC4xOTIsMi41MTYsMi4yMjksMy44NTcsMi4yOTksNS42OTVjMC4wNTYsMS40OTYtMS40NDcsMi43NDMtMS40NDcsMi43NDNzMi43MjgtMC41MzYsMy41NzktMi44MThjMC45NDUtMi41MzQtMS44MzQtNC4yNjktMS41NDgtNi4yOThjMC4yNjctMS45MzgsNi4wMzEtNS41NDMsNi4wMzEtNS41NDNTMjQuMzExLDExLjYxMSwyMy44NzgsMTcuMjd6Ij48L3BhdGg+PGc+PHBhdGggZmlsbD0iIzE1NjVDMCIgZD0iTTMyLjA4NCAyNS4wNTVjMS43NTQtLjM5NCAzLjIzMy43MjMgMy4yMzMgMi4wMSAwIDIuOTAxLTQuMDIxIDUuNjQzLTQuMDIxIDUuNjQzczYuMjI1LS43NDIgNi4yMjUtNS41MDVDMzcuNTIxIDI0LjA1MyAzNC40NjQgMjMuMjY2IDMyLjA4NCAyNS4wNTV6TTI5LjEyOSAyNy4zOTVjMCAwIDEuOTQxLTEuMzgzIDIuNDU4LTEuOTAyLTQuNzYzIDEuMDExLTE1LjYzOCAxLjE0Ny0xNS42MzguMjY5IDAtLjgwOSAzLjUwNy0xLjYzOCAzLjUwNy0xLjYzOHMtNy43NzMtLjExMi03Ljc3MyAyLjE4MUMxMS42ODMgMjguNjk1IDIxLjg1OCAyOC44NjYgMjkuMTI5IDI3LjM5NXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMTU2NUMwIiBkPSJNMjcuOTM1LDI5LjU3MWMtNC41MDksMS40OTktMTIuODE0LDEuMDItMTAuMzU0LTAuOTkzYy0xLjE5OCwwLTIuOTc0LDAuOTYzLTIuOTc0LDEuODg5YzAsMS44NTcsOC45ODIsMy4yOTEsMTUuNjMsMC41NzJMMjcuOTM1LDI5LjU3MXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMTU2NUMwIiBkPSJNMTguNjg2LDMyLjczOWMtMS42MzYsMC0yLjY5NSwxLjA1NC0yLjY5NSwxLjgyMmMwLDIuMzkxLDkuNzYsMi42MzIsMTMuNjI3LDAuMjA1bC0yLjQ1OC0xLjYzMkMyNC4yNzEsMzQuNDA0LDE3LjAxNCwzNC41NzksMTguNjg2LDMyLjczOXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMTU2NUMwIiBkPSJNMzYuMjgxLDM2LjYzMmMwLTAuOTM2LTEuMDU1LTEuMzc3LTEuNDMzLTEuNTg4YzIuMjI4LDUuMzczLTIyLjMxNyw0Ljk1Ni0yMi4zMTcsMS43ODRjMC0wLjcyMSwxLjgwNy0xLjQyNywzLjQ3Ny0xLjA5M2wtMS40Mi0wLjgzOUMxMS4yNiwzNC4zNzQsOSwzNS44MzcsOSwzNy4wMTdDOSw0Mi41MiwzNi4yODEsNDIuMjU1LDM2LjI4MSwzNi42MzJ6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzE1NjVDMCIgZD0iTTM5LDM4LjYwNGMtNC4xNDYsNC4wOTUtMTQuNjU5LDUuNTg3LTI1LjIzMSwzLjA1N0MyNC4zNDEsNDYuMTY0LDM4Ljk1LDQzLjYyOCwzOSwzOC42MDR6Ij48L3BhdGg+PC9nPgo8L3N2Zz4="/>
-				</div>					
-			</div>
-			
-			<br>
-
-			<!-- html -->
-			<div class="badge" id="orange">
-				<div class="circle">
-					<img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNFNjUxMDAiIGQ9Ik00MSw1SDdsMywzNGwxNCw0bDE0LTRMNDEsNUw0MSw1eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNGRjZEMDAiIGQ9Ik0yNCA4TDI0IDM5LjkgMzUuMiAzNi43IDM3LjcgOHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjQsMjV2LTRoOC42bC0wLjcsMTEuNUwyNCwzNS4xdi00LjJsNC4xLTEuNGwwLjMtNC41SDI0eiBNMzIuOSwxN2wwLjMtNEgyNHY0SDMyLjl6Ij48L3BhdGg+PHBhdGggZmlsbD0iI0VFRSIgZD0iTTI0LDMwLjl2NC4ybC03LjktMi42TDE1LjcsMjdoNGwwLjIsMi41TDI0LDMwLjl6IE0xOS4xLDE3SDI0di00aC05LjFsMC43LDEySDI0di00aC00LjZMMTkuMSwxN3oiPjwvcGF0aD4KPC9zdmc+"/>
-				</div>
-			</div>
-
-			<!-- css -->
-			<div class="badge" id="blue">
-				<div class="circle">
-					<img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiMwMjc3QkQiIGQ9Ik00MSw1SDdsMywzNGwxNCw0bDE0LTRMNDEsNUw0MSw1eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMzlCRTUiIGQ9Ik0yNCA4TDI0IDM5LjkgMzUuMiAzNi43IDM3LjcgOHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMzMuMSAxM0wyNCAxMyAyNCAxNyAyOC45IDE3IDI4LjYgMjEgMjQgMjEgMjQgMjUgMjguNCAyNSAyOC4xIDI5LjUgMjQgMzAuOSAyNCAzNS4xIDMxLjkgMzIuNSAzMi42IDIxIDMyLjYgMjF6Ij48L3BhdGg+PHBhdGggZmlsbD0iI0VFRSIgZD0iTTI0LDEzdjRoLTguOWwtMC4zLTRIMjR6IE0xOS40LDIxbDAuMiw0SDI0di00SDE5LjR6IE0xOS44LDI3aC00bDAuMyw1LjVsNy45LDIuNnYtNC4ybC00LjEtMS40TDE5LjgsMjd6Ij48L3BhdGg+Cjwvc3ZnPg=="/>
-				</div>
-			</div>
-
-			<!-- js -->
-			<div class="badge" id="yellow">
-				<div class="circle">	
-					<img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNmZmQ2MDAiIGQ9Ik02LDQyVjZoMzZ2MzZINnoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAwMDAxIiBkPSJNMjkuNTM4IDMyLjk0N2MuNjkyIDEuMTI0IDEuNDQ0IDIuMjAxIDMuMDM3IDIuMjAxIDEuMzM4IDAgMi4wNC0uNjY1IDIuMDQtMS41ODUgMC0xLjEwMS0uNzI2LTEuNDkyLTIuMTk4LTIuMTMzbC0uODA3LS4zNDRjLTIuMzI5LS45ODgtMy44NzgtMi4yMjYtMy44NzgtNC44NDEgMC0yLjQxIDEuODQ1LTQuMjQ0IDQuNzI4LTQuMjQ0IDIuMDUzIDAgMy41MjguNzExIDQuNTkyIDIuNTczbC0yLjUxNCAxLjYwN2MtLjU1My0uOTg4LTEuMTUxLTEuMzc3LTIuMDc4LTEuMzc3LS45NDYgMC0xLjU0NS41OTctMS41NDUgMS4zNzcgMCAuOTY0LjYgMS4zNTQgMS45ODUgMS45NTFsLjgwNy4zNDRDMzYuNDUyIDI5LjY0NSAzOCAzMC44MzkgMzggMzMuNTIzIDM4IDM2LjQxNSAzNS43MTYgMzggMzIuNjUgMzhjLTIuOTk5IDAtNC43MDItMS41MDUtNS42NS0zLjM2OEwyOS41MzggMzIuOTQ3ek0xNy45NTIgMzMuMDI5Yy41MDYuOTA2IDEuMjc1IDEuNjAzIDIuMzgxIDEuNjAzIDEuMDU4IDAgMS42NjctLjQxOCAxLjY2Ny0yLjA0M1YyMmgzLjMzM3YxMS4xMDFjMCAzLjM2Ny0xLjk1MyA0Ljg5OS00LjgwNSA0Ljg5OS0yLjU3NyAwLTQuNDM3LTEuNzQ2LTUuMTk1LTMuMzY4TDE3Ljk1MiAzMy4wMjl6Ij48L3BhdGg+Cjwvc3ZnPg=="/>
-				</div>					
-			</div>
-
-			<br>
-
-			<!-- git -->
-			<div class="badge" id="orange">
-				<div class="circle">
-					<img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNGNDUxMUUiIGQ9Ik00Mi4yLDIyLjFMMjUuOSw1LjhDMjUuNCw1LjMsMjQuNyw1LDI0LDVjMCwwLDAsMCwwLDBjLTAuNywwLTEuNCwwLjMtMS45LDAuOGwtMy41LDMuNWw0LjEsNC4xYzAuNC0wLjIsMC44LTAuMywxLjMtMC4zYzEuNywwLDMsMS4zLDMsM2MwLDAuNS0wLjEsMC45LTAuMywxLjNsNCw0YzAuNC0wLjIsMC44LTAuMywxLjMtMC4zYzEuNywwLDMsMS4zLDMsM3MtMS4zLDMtMywzYy0xLjcsMC0zLTEuMy0zLTNjMC0wLjUsMC4xLTAuOSwwLjMtMS4zbC00LTRjLTAuMSwwLTAuMiwwLjEtMC4zLDAuMXYxMC40YzEuMiwwLjQsMiwxLjUsMiwyLjhjMCwxLjctMS4zLDMtMywzcy0zLTEuMy0zLTNjMC0xLjMsMC44LTIuNCwyLTIuOFYxOC44Yy0xLjItMC40LTItMS41LTItMi44YzAtMC41LDAuMS0wLjksMC4zLTEuM2wtNC4xLTQuMUw1LjgsMjIuMUM1LjMsMjIuNiw1LDIzLjMsNSwyNGMwLDAuNywwLjMsMS40LDAuOCwxLjlsMTYuMywxNi4zYzAsMCwwLDAsMCwwYzAuNSwwLjUsMS4yLDAuOCwxLjksMC44czEuNC0wLjMsMS45LTAuOGwxNi4zLTE2LjNjMC41LTAuNSwwLjgtMS4yLDAuOC0xLjlDNDMsMjMuMyw0Mi43LDIyLjYsNDIuMiwyMi4xeiI+PC9wYXRoPgo8L3N2Zz4="/>
-				</div>					
-			</div>
-
-			<!-- docker -->
-			<div class="badge" id="blue">
-				<div class="circle">
-					<img src="imgs/icons8-docker.svg"/>
-				</div>					
-			</div>
-
-			<!-- power bi -->
-			<div class="badge" id="yellow">
-				<div class="circle">
-					<img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNmZmMxMDciIGQ9Ik00MCw0MUg4Yy0yLjIwNiwwLTQtMS43OTQtNC00VjExYzAtMi4yMDYsMS43OTQtNCw0LTRoMzJjMi4yMDYsMCw0LDEuNzk0LDQsNHYyNglDNDQsMzkuMjA2LDQyLjIwNiw0MSw0MCw0MXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMjEyMTIxIiBkPSJNMzQsMTIuOThIMTQuMDJjLTIuMiwwLTQsMS43OS00LDRWMzBjMCwxLjg2LDEuMjcsMy40MiwyLjk4LDMuODZ2LTIuMTQJYy0wLjU5LTAuMzUtMC45OC0wLjk5LTAuOTgtMS43MlYxNi45OGMwLTEuMSwwLjktMiwyLTJIMzRjMS4xLDAsMiwwLjksMiwyVjMwYzAsMC43NC0wLjQsMS4zOC0xLDEuNzN2Mi4xNGMxLjczLTAuNDQsMy0yLjAxLDMtMy44NwlWMTYuOThDMzgsMTQuNzcsMzYuMjEsMTIuOTgsMzQsMTIuOTh6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzIxMjEyMSIgZD0iTTE2LjUsMjhMMTYuNSwyOGMwLjgyOCwwLDEuNSwwLjY3MiwxLjUsMS41djVjMCwwLjgyOC0wLjY3MiwxLjUtMS41LDEuNWwwLDAJYy0wLjgyOCwwLTEuNS0wLjY3Mi0xLjUtMS41di01QzE1LDI4LjY3MiwxNS42NzIsMjgsMTYuNSwyOHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMjEyMTIxIiBkPSJNMjEuNSwyMkwyMS41LDIyYzAuODI4LDAsMS41LDAuNjcyLDEuNSwxLjV2MTFjMCwwLjgyOC0wLjY3MiwxLjUtMS41LDEuNWwwLDAJYy0wLjgyOCwwLTEuNS0wLjY3Mi0xLjUtMS41di0xMUMyMCwyMi42NzIsMjAuNjcyLDIyLDIxLjUsMjJ6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzIxMjEyMSIgZD0iTTI2LjUsMjVMMjYuNSwyNWMwLjgyOCwwLDEuNSwwLjY3MiwxLjUsMS41djhjMCwwLjgyOC0wLjY3MiwxLjUtMS41LDEuNWwwLDAJYy0wLjgyOCwwLTEuNS0wLjY3Mi0xLjUtMS41di04QzI1LDI1LjY3MiwyNS42NzIsMjUsMjYuNSwyNXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMjEyMTIxIiBkPSJNMzEuNSwxOEwzMS41LDE4YzAuODI4LDAsMS41LDAuNjcyLDEuNSwxLjV2MTVjMCwwLjgyOC0wLjY3MiwxLjUtMS41LDEuNWwwLDAJYy0wLjgyOCwwLTEuNS0wLjY3Mi0xLjUtMS41di0xNUMzMCwxOC42NzIsMzAuNjcyLDE4LDMxLjUsMTh6Ij48L3BhdGg+Cjwvc3ZnPg=="/>
-				</div>					
-			</div>	
-			
-			<br>
-
-			<!-- sql -->
-			<div class="badge" id="red">
-				<div class="circle">
-					<img width="32" height="32" src="https://img.icons8.com/windows/32/sql.png" alt="sql" style="padding-top: 8px;"/>
-				</div>					
-			</div>			
-			
-
-		</div> <!-- end skills-->
-		
-
-		<!-- PROJECTS -->
-		<div id="projects">
-			<h1>[ projects ]</h1>
-
-			<div class="row"><!--first row-->
-
-				<div class="column">
-					Serendipity Booksellers - C++
-					<br>
-					<img src="imgs/seren.png">
-					<br>
-
-					<button>
-						More Info
-					</button>
-					
-				</div><!-- end column-->
-
-				<div class="column">
-					Book Reader - HTML/CSS
-					<br>
-					<img src="imgs/book.gif">
-					<br>
-					<button>
-						<a href="treasureisland/book.html">More Info</a>
-					</button>
-				</div>
-
-				<div class="column">
-					MyRecipesApp - Python/API
-					<br>
-					<img src="imgs/recipes.png">
-					<br>
-					<button>
-						<a href="https://github.com/jehielle/MyRecipesApp/tree/main">More Info</a>
-					</button>
-				</div>
-
-			</div> <!-- end first row -->
-
-			<div class="row"><!-- second row-->
-
-				<div class="column">
-					Ask Out - HTML/CSS/JS
-					<br>
-					<img src="imgs/askout.gif">
-					<br>
-					<button>
-						<a href="askout/askout.html">More Info</a>
-					</button>
-				</div>
-
-				<div class="column">
-					WIP
-					<br>
-					<br>
-					<button>
-						More Info
-					</button>
-				</div>
-				
-				<div class="column">
-					WIP
-					<br>
-					<br>
-					<button>
-						More Info
-					</button>
-				</div>
-
-			</div> <!-- end second row-->
+                <!-- OTHER TABS GO HERE -->
+                
+            </div> <!-- div class tabs ends -->
 
 
 
-		</div> <!-- end proj-->
-		
-
-		<!-- CONTACT -->
-		<div id="contact">
-			<h1>[ contact me ]</h1>
-
-			<div class="container">
-				<form action="action_page.php">
-					<input type="text" id="fullname" name="fullname" placeholder="Full Name">
-					<br>
-					<input type="text" id="email" email="email" placeholder="Email">
-					<br>
-					<textarea id="subject" name="subject" placeholder="Message" style="max-height: 300px;"></textarea>
-					<br>
-					<input type="submit" value="Submit">
-				</form>
-			  </div>
-
-		</div> <!-- end contact-->
 
 
-	</div> <!-- end class wrapper-->
 
-	<footer>
-		&#169; 2023 Jehielle David
-	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <footer>
+                Copyright <script>document.write(new Date().getFullYear());</script> Jehielle David
+            </footer>
+        </div> <!-- end grain -->
+
+    </div> <!-- end wrapper -->
+
+
+
+
 
     <!-- javascript file -->
     <script type="text/javascript" src="index.js"></script>

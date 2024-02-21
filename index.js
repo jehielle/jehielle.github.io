@@ -1,16 +1,20 @@
-/*****************************
- *  STICKY NAVBAR
- *****************************/
-window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("navbar"); // get navbar
-var sticky = navbar.offsetTop; // get navbar position
+//init appwrite
+import { Client, Account } from "appwrite";
+const client = new Client();
 
-// add sticky navbar when scrolling, if not, remove sticky navbar
-function myFunction() {
-  if (window.scrollY >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+client
+    .setEndpoint('https://cloud.appwrite.io/v1')
+    .setProject('657558b565656689d228');
+
+// MAKE BG GRAINY
+var options = {
+    animate: true,
+    patternWidth: 100,
+    patternHeight: 100,
+    grainOpacity: 0.05,
+    grainDensity: 1,
+    grainWidth: 1,
+    grainHeight: 1
+};
+grained('#grain', options);
 
