@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=DM+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Pirata+One&display=swap');
 
 body{
     background-color: #141414;
@@ -37,7 +37,7 @@ body{
 }
 
 h1{
-    font-family: 'Pirata One';
+    font-family: 'Pirata One', system-ui;
     font-size: 8vw;
     font-weight: normal;
     margin-bottom: 5vh;
@@ -45,14 +45,14 @@ h1{
 }
 
 p{
-    font-family: 'DM Mono';
+    font-family: 'DM Mono', monospace;
     font-size: 17px;
     margin-left: 28vw;
     margin-right: 28vw;
 }
 
 footer{
-    font-family: 'DM Mono';
+    font-family: 'DM Mono', monospace;
     font-size: 15px;
     padding:5vh 0;
 }
@@ -184,5 +184,3 @@ a:hover{
     }
 
 }
-
-/*test*/
