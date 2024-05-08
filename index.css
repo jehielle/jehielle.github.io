@@ -113,13 +113,14 @@ a:hover{
 }
 
 .tabs label { /* the tab flap for unopened tab */
-	order: 1; 
+	order: initial; 
 	display: block;
 	padding: 10px 20px 13px 20px;
 	cursor: pointer;
 	background: none;
 	font-size: 15px;
     text-align: center;
+    margin-left: 25%;
 	
 }
 .tabs .tab { /*contents of tab*/
@@ -151,21 +152,18 @@ a:hover{
 /* ---------------------------------------------- */
 
 @media (max-width: 45em) {
-    .tabs .tab,
-    .tabs label {
-        order: initial;
-    }
 
     .tabs{
         text-align: center;
     }
 
     .tabs label { /* the tab flap for unopened tab */
-        width: auto;
+        width: 30%;
         margin-right: auto;
         margin-top: 0.2rem;	
         margin-bottom: -0.1rem;
         border-radius: 10px 10px 10px 10px;
+        margin-left: 20%;
     }
 
     .column{
@@ -175,11 +173,16 @@ a:hover{
     }
 
     h1{
-        font-size: 6vw;
+        font-size: 50px;
+    }
+
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     footer{
-        font-size: 5vw;
+        font-size: 15px;
         padding:5vh 0;
     }
 

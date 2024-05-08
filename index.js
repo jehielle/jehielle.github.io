@@ -1,5 +1,5 @@
 //init appwrite
-import { Client, Account } from "appwrite";
+import { Client } from "appwrite";
 const client = new Client();
 
 client
